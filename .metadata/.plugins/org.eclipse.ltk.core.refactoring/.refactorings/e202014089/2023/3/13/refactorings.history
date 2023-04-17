@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;net.skhu.mapper.BusMapper.java&apos; to &apos;CategoryMapper.java&apos;&#x0A;- Original project: &apos;e202014089&apos;&#x0A;- Original element: &apos;net.skhu.mapper.BusMapper.java&apos;&#x0A;- Renamed element: &apos;net.skhu.mapper.CategoryMapper.java&apos;" description="Rename compilation unit &apos;BusMapper.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.skhu.mapper{BusMapper.java" name="CategoryMapper.java" references="false" stamp="1680075607182" version="1.0"/>
+</session>

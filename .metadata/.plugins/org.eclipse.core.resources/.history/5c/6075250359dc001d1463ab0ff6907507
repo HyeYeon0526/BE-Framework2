@@ -1,0 +1,10 @@
+package net.skhu.mapper;
+
+public class studentMapper {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

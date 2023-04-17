@@ -1,0 +1,31 @@
+package net.skhu.mapper;
+
+import java.util.List;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+import net.skhu.dto.Student;
+
+@Mapper
+public interface StudentMapper {
+	@Select("SELECT * FROM department")
+	List<Student> findAll();
+	
+	@Select("SELECT * FROM department WHERE id = #{id}")
+	Student findOne(int id);
+ 
+	
+	@Insert("INSERT department (name, shortName, phone) VALUES (#{name}, #{shortName}, #{phone})")
+	@Options(useGeneratedKeys=true, keyProperty="id")
+	void insert(Student department);
+ 
+	
+	@Update("UPDATE department SET name = #{name}, shortName = #{shortName}, phone = #{phone} WHERE id = #{id}")
+	void update(Student department);
+ 
+	
+	@Delete("DELETE FROM department WHERE id = #{id}")
+ v
