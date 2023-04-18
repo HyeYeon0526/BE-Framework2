@@ -13,11 +13,14 @@ import net.skhu.dto.Student;
 
 @Mapper
 public interface StudentMapper {
-	@Select("SELECT * FROM student")
-	List<Student> findAll();
+
 
 	@Select("SELECT * FROM student WHERE id = #{id}")
 	Student findOne(int id);
+
+	@Select("""
+			SELECT s.*, d.name departmentName FROM student s LEFT JOIN department d ON s.departmentId = d.id """)
+	List<Student> findAll();
 
 
 	@Insert("INSERT student (studentNo, name, departmentId, phone, sex, email) VALUES (#{studentNo}, #{name}, #{departmentId}, #{phone}, #{sex}, #{email})")
@@ -26,14 +29,7 @@ public interface StudentMapper {
 
 
 	@Update("""
-
-			UPDATE student SET
-			studentNo = #{studentNo},
-			name = #{name},
-			departmentId = #{departmentId},
-			phone = #{phone},
-			sex = #{sex},
-			email = #{email}) WHERE id = #{id} """)
+			UPDATE student SET studentNo = #{studentNo}, name = #{name}, departmentId = #{departmentId}, phone = #{phone}, sex = #{sex}, email = #{email} WHERE id = #{id} """)
 	void update(Student student);
 
 

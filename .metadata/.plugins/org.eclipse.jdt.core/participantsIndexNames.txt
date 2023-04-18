@@ -1,6 +1,8 @@
 INDEX VERSION 1.132
 /Users/kimhyeyeon/PJ/STS/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2123077354.index
 /mybatis1/src/main/java
+/Users/kimhyeyeon/PJ/STS/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2395082651.index
+/practice2/src/main/java
 /Users/kimhyeyeon/PJ/STS/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/84481770.index
 /form3/src/main/java
 /Users/kimhyeyeon/PJ/STS/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/557459889.index
