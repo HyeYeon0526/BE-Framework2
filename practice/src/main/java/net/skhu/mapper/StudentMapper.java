@@ -18,8 +18,7 @@ public interface StudentMapper {
 	@Select("SELECT * FROM student WHERE id = #{id}")
 	Student findOne(int id);
 
-	@Select("""
-			SELECT s.*, d.name departmentName FROM student s LEFT JOIN department d ON s.departmentId = d.id """)
+	@Select("SELECT * FROM student")
 	List<Student> findAll();
 
 
